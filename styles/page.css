@@ -1,0 +1,10 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.grey-bg {
+    background: #707070;
+    border:     #707070;
+    text-align: center;
+    color:      #FFFFFF;
+}

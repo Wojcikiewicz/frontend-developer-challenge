@@ -1,0 +1,11 @@
+.footer{
+    left:     0;
+    position: absolute;
+    height:   201px;
+    width:    100% ;
+}
+
+.footer p{
+    margin-top: 65px;
+    font-size: 12px;
+}

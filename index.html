@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/header-style.css"   />
-    <link rel="stylesheet" type="text/css" href="styles/elements.css"       />
-    <link rel="stylesheet" type="text/css" href="styles/footer-style.css"   />
+    <link rel="stylesheet" type="text/css" href="styles/page.css"               />
+    <link rel="stylesheet" type="text/css" href="styles/header-style.css"       />
+    <link rel="stylesheet" type="text/css" href="styles/footer-style.css"       />
+    <link rel="stylesheet" type="text/css" href="styles/card-table-style.css"   />
     <script type="text/javascript" src="index-functions.js" ></script>
     <meta charset="UTF-8">
     <title>Produtos Linx</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header grey-bg">
         <p>
             uma seleção de produtos <br/>
             <strong> especial para você </strong>
@@ -19,13 +20,20 @@
             Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
         </h5>
         <nav>
-            <button> Conheça a Linx </button>
-            <button> Ajude o algorítimo </button>
-            <button> Seus Produtos </button>
+            <button onclick="redirect('https://www.linx.com.br/sobre-a-linx/')"> Conheça a Linx </button>
+            <button onclick="redirect('https://github.com/Wojcikiewicz/frontend-developer-challenge/tree/hilson-wojcikiewicz')"> Ajude o algorítimo </button>
+            <button onclick="redirect('#card-table')" > Seus Produtos </button>
             <button> Compartilhe </button>
         </nav>
     </header>
-    <div id="card-table"></div>
-    <div class="footer"></div>
+    <div class="card-table" id="card-table">
+    </div>
+    <footer class="footer grey-bg">
+        <p>
+            Testando suas habilidades em HTML, CSS e JS. <br>
+            Linx Impulse <br>
+            2019
+        </p>
+    </footer>
 </body>
 </html>
