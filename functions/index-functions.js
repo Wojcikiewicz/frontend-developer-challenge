@@ -1,7 +1,7 @@
 const endpoint = "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1";
 
 async function getProducts(link) {
-    let response = await fetch(link);
+    const response = await fetch(link);
     if (response.ok){
         let json = await response.json();
         createCards(json.products);
@@ -14,37 +14,38 @@ async function getProducts(link) {
 
 function createCards(products) {
     let section = document.createElement("section");
-    for (let i = 0; i < 8; i++) {
-        let card = createCard(products[i]);
+    let card;
+    for (const product of products) {
+        card = createCard(product);
         section.appendChild(card);
     }
     document.getElementById("card-table").appendChild(section);
 }
 
 function createCard(product) {
-    let card = document.createElement("article");
-    let image = document.createElement("figure");
+    const card = document.createElement("article");
+    const image = document.createElement("figure");
     image.style.backgroundImage = ('url(https:' + product.image + ')');
     card.appendChild(image);
     card.appendChild(generateP(product.name, "name"));
     card.appendChild(generateP(product.description, "description"));
-    card.appendChild(generateP("De: R$" + product.oldPrice, "oldPrice"));
-    card.appendChild(generateP("Por: R$" + product.price, "price"));
-    card.appendChild(generateP('ou ' + product.installments.count + 'x de R$' + product.installments.value + "0",
-        "installments"));
+    card.appendChild(generateP("De: R$" + product.oldPrice.toFixed(2), "oldPrice"));
+    card.appendChild(generateP("Por: R$" + product.price.toFixed(2), "price"));
+    card.appendChild(generateP('ou ' + product.installments.count + 'x de R$' +
+        product.installments.value.toFixed(2), "installments"));
     card.appendChild(generateButton("Comprar"));
     return card;
 }
 
 function generateButton(text, onClick) {
-    let button = document.createElement("button");
+    const button = document.createElement("button");
     button.onclick = onClick;
     button.innerText = text;
     return button;
 }
 
 function generateP(text, className) {
-    let p = document.createElement("p");
+    const p = document.createElement("p");
     p.innerText =  text;
     p.className = className;
     return p;
