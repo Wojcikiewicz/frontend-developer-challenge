@@ -2,9 +2,23 @@ body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+button{
+    border:           1px solid #707070;
+    border-radius:    4px;
+    background-color: #FFFFFF;
+    color:            #888888;
+}
+
 .grey-bg {
     background: #707070;
     border:     #707070;
     text-align: center;
     color:      #FFFFFF;
+}
+
+.main-page{
+    color:          #888888;
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
 }

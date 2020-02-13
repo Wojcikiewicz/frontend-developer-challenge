@@ -1,4 +1,72 @@
-.card-table {
+
+.products {
     min-height: 459px;
     margin-top: 319px;
+}
+
+#more{
+    margin-top:     42px;
+    margin-bottom:  164px;
+    width:          260px;
+    height:         39px;
+}
+
+.products section{
+    width:           931px;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+}
+
+.products h2{
+    margin-top:     49px;
+    margin-bottom:  11px;
+    font-weight:    bold;
+    font-size:      18px;
+}
+
+.products article{
+    margin-top: 39px;
+    width:      201px;
+}
+
+.products article button{
+    margin-top: 10px;
+    width:      200px;
+    height:     30px;
+    font-size:  16px;
+}
+
+.products figure{
+    margin:          0;
+    height:          150px;
+    width:           200px;
+    background-size: cover;
+    border:          1px solid #707070;
+}
+
+.name{
+    margin-top: 14px;
+    font-size:  14px;
+}
+
+.description{
+    margin-top: 10px;
+    font-size:  12px;
+}
+
+.oldPrice{
+    margin-top: 0;
+    font-size:  12px;
+}
+
+.price{
+    margin-top:  6px;
+    font-weight: bold;
+    font-size:   16px;
+}
+
+.installments{
+    margin-top: 7px;
+    font-size:  12px;
 }

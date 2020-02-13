@@ -1,0 +1,43 @@
+.share h2{
+    font-weight: bold;
+    font-size:   18px;
+}
+
+.share div{
+    display:    flex;
+    flex-wrap:  wrap;
+}
+
+.share p{
+    margin-top: 44px;
+    font-size:  14px;
+}
+
+.share table{
+    margin-left:    40px;
+    margin-top:     39px;
+    margin-bottom:  50px;
+}
+
+.share th{
+    text-align:     left;
+    width:          380px;
+    font-size:      12px;
+    font-weight:    normal;
+    margin-bottom:  7px;
+}
+.share td{
+    height: 30px;
+    width:  380px;
+}
+
+.share input{
+    height: 30px;
+    width:  340px;
+}
+
+.share button{
+    height:         39px;
+    width:          260px;
+    margin-bottom:  142.36px;
+}
