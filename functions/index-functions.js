@@ -13,7 +13,7 @@ async function getProducts(link) {
 }
 
 function createCards(products) {
-    let section = document.createElement("section");
+    const section = document.createElement("section");
     let card;
     for (const product of products) {
         card = createCard(product);
