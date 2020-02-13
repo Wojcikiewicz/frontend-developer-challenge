@@ -1,9 +1,5 @@
 const endpoint = "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1";
 
-function redirect(link) {
-    window.location.href = link;
-}
-
 async function getProducts(link) {
     let response = await fetch(link);
     if (response.ok){

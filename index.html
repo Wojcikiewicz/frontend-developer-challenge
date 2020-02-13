@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/footer-style.css"       />
     <link rel="stylesheet" type="text/css" href="styles/card-table-style.css"   />
     <link rel="stylesheet" type="text/css" href="styles/share-style.css"        />
-    <script type="text/javascript" src="index-functions.js" ></script>
+    <script type="text/javascript" src="functions/index-functions.js" ></script>
     <meta charset="UTF-8">
     <title>Produtos Linx</title>
 </head>
@@ -21,10 +21,12 @@
         Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
     </h5>
     <nav>
-        <button onclick="redirect('https://www.linx.com.br/sobre-a-linx/')"> Conheça a Linx </button>
-        <button onclick="redirect('https://github.com/Wojcikiewicz/frontend-developer-challenge/tree/hilson-wojcikiewicz')"> Ajude o algorítimo </button>
-        <button onclick="redirect('#card-table')" > Seus Produtos </button>
-        <button > Compartilhe </button>
+        <a href="https://www.linx.com.br/sobre-a-linx/"> <button> Conheça a Linx </button> </a>
+        <a href="https://github.com/Wojcikiewicz/frontend-developer-challenge/tree/hilson-wojcikiewicz">
+            <button> Ajude o algorítimo </button>
+        </a>
+        <a href="#card-table"> <button> Seus Produtos </button> </a>
+        <a href="#share"> <button> Compartilhe </button> </a>
     </nav>
 </header>
 <div class="products main-page">
@@ -43,8 +45,8 @@
             <th> E-mail </th>
         </tr>
         <tr>
-            <td> <input type="text"> </td>
-            <td> <input type="email"> </td>
+            <td> <input type="text" required> </td>
+            <td> <input type="email" required> </td>
         </tr>
     </table>
     <button type="submit"> Enviar agora </button>
